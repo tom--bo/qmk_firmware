@@ -61,7 +61,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	KC_RALT,  KC_LPRN, KC_RBRC, KC_LBRC, TG(FN1),
 	RESET,    KC_NO,
 	KC_NO,
-	KC_NO,  KC_BSPC,  KC_ENT,
+	KC_NO,  KC_BSPC,  KC_ENT
+    ),
 /* Keymap 1: Mac OS X layer
  *
  * ,--------------------------------------------------.           ,--------------------------------------------------.
@@ -103,7 +104,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	KC_LEFT,  KC_DOWN, KC_UP,   KC_RIGHT, TG(FN1),
 	KC_RCBR,  PASTE,
 	KC_RPRN,
-	KC_RBRC,  KC_ENT,  KC_BSPC,
+	KC_RBRC,  KC_ENT,  KC_BSPC
+    ),
 /* Keymap 2: Fn Keys, media and mouse keys
  *
  * ,--------------------------------------------------.           ,--------------------------------------------------.
