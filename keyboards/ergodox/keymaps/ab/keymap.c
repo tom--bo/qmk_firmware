@@ -3,7 +3,7 @@
 #include "action_layer.h"
 
 #define BASE 0 // default layer
-#define OSX  1 // Mac OS X layer
+#define THK  1 // THK layer
 #define FN1  2 // media layer
 
 #define CAPS_CTL CTL_T(KC_CAPS)  // Caps on tap, Ctrl on hold.
@@ -31,7 +31,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |--------+------+------+------+------+------|  Dn  |           | Left |------+------+------+------+------+--------|
  * | LShift |   Z  |   X  |   C  |   V  |   B  |      |           |      |   N  |   M  |   ,  |   .  |   /  |   '    |
  * `--------+------+------+------+------+-------------'           `-------------+------+------+------+------+--------'
- *   | Esc  |CpsCtl| LGui | LGui | RAlt |                                       | PrSc |  [   |   ]  | RAlt |  FN1 |
+ *   | Esc  |CpsCtl| LGui | LGui | LAlt |                                       | RGui |  [   |   ]  | RAlt |  FN1 |
  *   `----------------------------------'                                       `----------------------------------'
  *                                        ,-------------.       ,--------------.
  *                                        | Esc  |      |       | RESET |      |
@@ -49,7 +49,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	KC_TAB,   KC_Q,    KC_W,    KC_E,     KC_R,     KC_T,    KC_UP,
 	KC_LCTL,  KC_A,    KC_S,    KC_D,     KC_F,     KC_G,
 	KC_LSFT,  KC_Z,    KC_X,    KC_C,     KC_V,     KC_B,    KC_DOWN,
-	KC_ESC,   CAPS_CTL,KC_LGUI, KC_LGUI,  KC_RALT,
+	KC_ESC,   CAPS_CTL,KC_LGUI, KC_LGUI,  KC_LALT,
 	KC_ESC,   KC_NO,
 	KC_NO,
 	KC_SPC,   KC_DEL,  TG(FN1),
@@ -58,12 +58,12 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	KC_RIGHT,  KC_Y,    KC_U,    KC_I,     KC_O,     KC_P,    KC_BSLS,
 	KC_H,     KC_J,    KC_K,    KC_L,     KC_SCLN,  KC_ENT,
 	KC_LEFT,  KC_N,    KC_M,    KC_COMM,  KC_DOT,   KC_SLSH, KC_QUOT,
-	KC_PSCR,  KC_LBRC, KC_RBRC, KC_RALT, TG(FN1),
+	KC_RGUI,  KC_LBRC, KC_RBRC, KC_RALT, TG(FN1),
 	RESET,    KC_NO,
 	KC_NO,
 	KC_NO,  KC_BSPC,  KC_SPC
     ),
-/* Keymap 0: Basic layer
+/* Keymap 3: THK layer
  *
  * ,--------------------------------------------------.           ,--------------------------------------------------.
  * |   `    |   1  |   2  |   3  |   4  |   5  |  6   |           |   7  |   8  |   9  |   0  |   -  |   =  | BSpace |
@@ -74,7 +74,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |--------+------+------+------+------+------|  Dn  |           | Left |------+------+------+------+------+--------|
  * | LShift |   Z  |   X  |   C  |   V  |   B  |      |           |      |   N  |   M  |   ,  |   .  |   /  |   '    |
  * `--------+------+------+------+------+-------------'           `-------------+------+------+------+------+--------'
- *   | Esc  |CpsCtl| LGui | LGui | LAlt |                                       | PrSc |  [   |   ]  | RAlt |  FN1 |
+ *   | Esc  |CpsCtl| LGui | LGui | RAlt |                                       | PrSc |  [   |   ]  | RAlt |  FN1 |
  *   `----------------------------------'                                       `----------------------------------'
  *                                        ,-------------.       ,--------------.
  *                                        | Esc  |      |       | RESET |      |
@@ -86,13 +86,13 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  */
 // If it accepts an argument (i.e, is a function), it doesn't need KC_.
 // Otherwise, it needs KC_*
-    [OSX] = KEYMAP(  // layer 0 : default
+    [THK] = KEYMAP(  // layer 0 : default
 	// Left hand
 	KC_GRV,   KC_1,    KC_2,    KC_3,     KC_4,     KC_5,    KC_6,
 	KC_TAB,   KC_Q,    KC_W,    KC_E,     KC_R,     KC_T,    KC_UP,
 	KC_LCTL,  KC_A,    KC_S,    KC_D,     KC_F,     KC_G,
 	KC_LSFT,  KC_Z,    KC_X,    KC_C,     KC_V,     KC_B,    KC_DOWN,
-	KC_ESC,   CAPS_CTL,KC_LGUI, KC_LGUI,  KC_LALT,
+	KC_ESC,   CAPS_CTL,KC_LGUI, KC_LGUI,  KC_RALT,
 	KC_ESC,   KC_NO,
 	KC_NO,
 	KC_SPC,   KC_DEL,  TG(FN1),
