@@ -31,14 +31,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |--------+------+------+------+------+------|  Dn  |           | Left |------+------+------+------+------+--------|
  * | LShift |   Z  |   X  |   C  |   V  |   B  |      |           |      |   N  |   M  |   ,  |   .  |   /  |   '    |
  * `--------+------+------+------+------+-------------'           `-------------+------+------+------+------+--------'
- *   | Esc  |CpsCtl| LGui | LGui | LAlt |                                       | RGui |  [   |   ]  | RAlt |  FN1 |
+ *   | Esc  |CpsCtl| LGui | LGui | LAlt |                                       | RGui |  [   |   ]  | RAlt |   '  |
  *   `----------------------------------'                                       `----------------------------------'
  *                                        ,-------------.       ,--------------.
  *                                        | Esc  |      |       | RESET |      |
  *                                 ,------|------+------|       |-------+------+------.
  *                                 |      |      |      |       |       |      |      |
  *                                 |Space | Del  |------|       |-------|BSpace|Space |
- *                                 |      |      | FN1  |       |       |      |      |
+ *                                 |      |      | FN1  |       |  THK  |      |      |
  *                                 `--------------------'       `--------------------'
  */
 // If it accepts an argument (i.e, is a function), it doesn't need KC_.
@@ -55,13 +55,13 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	KC_SPC,   KC_DEL,  TG(FN1),
 	// Right hand
 	KC_7,     KC_8,    KC_9,    KC_0,     KC_MINS,  KC_EQL,  KC_BSPC,
-	KC_RIGHT,  KC_Y,    KC_U,    KC_I,     KC_O,     KC_P,    KC_BSLS,
+	KC_RIGHT, KC_Y,    KC_U,    KC_I,     KC_O,     KC_P,    KC_BSLS,
 	KC_H,     KC_J,    KC_K,    KC_L,     KC_SCLN,  KC_ENT,
 	KC_LEFT,  KC_N,    KC_M,    KC_COMM,  KC_DOT,   KC_SLSH, KC_QUOT,
-	KC_RGUI,  KC_LBRC, KC_RBRC, KC_RALT, TG(FN1),
+	KC_RGUI,  KC_LBRC, KC_RBRC, KC_RALT, KC_QUOT,
 	RESET,    KC_NO,
 	KC_NO,
-	KC_NO,  KC_BSPC,  KC_SPC
+	TG(THK),  KC_BSPC,  KC_SPC
     ),
 /* Keymap 3: THK layer
  *
@@ -74,14 +74,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |--------+------+------+------+------+------|  Dn  |           | Left |------+------+------+------+------+--------|
  * | LShift |   Z  |   X  |   C  |   V  |   B  |      |           |      |   N  |   M  |   ,  |   .  |   /  |   '    |
  * `--------+------+------+------+------+-------------'           `-------------+------+------+------+------+--------'
- *   | Esc  |CpsCtl| LGui | LGui | RAlt |                                       | PrSc |  [   |   ]  | RAlt |  FN1 |
+ *   | Esc  |CpsCtl| LGui | LGui | RAlt |                                       | PrSc |  [   |   ]  | RAlt |  '   |
  *   `----------------------------------'                                       `----------------------------------'
  *                                        ,-------------.       ,--------------.
  *                                        | Esc  |      |       | RESET |      |
  *                                 ,------|------+------|       |-------+------+------.
  *                                 |      |      |      |       |       |      |      |
  *                                 |Space | Del  |------|       |-------|BSpace|Space |
- *                                 |      |      | FN1  |       |       |      |      |
+ *                                 |      |      | FN1  |       |  THK  |      |      |
  *                                 `--------------------'       `--------------------'
  */
 // If it accepts an argument (i.e, is a function), it doesn't need KC_.
@@ -92,19 +92,19 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	KC_TAB,   KC_Q,    KC_W,    KC_E,     KC_R,     KC_T,    KC_UP,
 	KC_LCTL,  KC_A,    KC_S,    KC_D,     KC_F,     KC_G,
 	KC_LSFT,  KC_Z,    KC_X,    KC_C,     KC_V,     KC_B,    KC_DOWN,
-	KC_ESC,   CAPS_CTL,KC_LGUI, KC_LGUI,  KC_RALT,
+	KC_ESC,   CAPS_CTL,KC_LGUI, KC_LGUI,  KC_LALT,
 	KC_ESC,   KC_NO,
 	KC_NO,
 	KC_SPC,   KC_DEL,  TG(FN1),
 	// Right hand
 	KC_7,     KC_8,    KC_9,    KC_0,     KC_MINS,  KC_EQL,  KC_BSPC,
-	KC_RIGHT,  KC_Y,    KC_U,    KC_I,     KC_O,     KC_P,    KC_BSLS,
+	KC_RIGHT, KC_Y,    KC_U,    KC_I,     KC_O,     KC_P,    KC_BSLS,
 	KC_H,     KC_J,    KC_K,    KC_L,     KC_SCLN,  KC_ENT,
 	KC_LEFT,  KC_N,    KC_M,    KC_COMM,  KC_DOT,   KC_SLSH, KC_QUOT,
-	KC_PSCR,  KC_LBRC, KC_RBRC, KC_RALT, TG(FN1),
+	KC_PSCR,  KC_LBRC, KC_RBRC, KC_RALT,  KC_QUOT,
 	RESET,    KC_NO,
 	KC_NO,
-	KC_NO,  KC_BSPC,  KC_SPC
+	KC_TRNS,  KC_BSPC, KC_SPC
     ),
 /* Keymap 2: Fn Keys, media and mouse keys
  *
