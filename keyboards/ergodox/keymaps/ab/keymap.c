@@ -25,10 +25,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * ,--------------------------------------------------.           ,--------------------------------------------------.
  * |   `    |   1  |   2  |   3  |   4  |   5  |  6   |           |   7  |   8  |   9  |   0  |   -  |   =  | BSpace |
  * |--------+------+------+------+------+------+------|           |------+------+------+------+------+------+--------|
- * | Tab    |   Q  |   W  |   E  |   R  |   T  |  Up  |           |Right |   Y  |   U  |   I  |   O  |   P  |   \    |
+ * | Tab    |   Q  |   W  |   E  |   R  |   T  |  Up  |           | Left |   Y  |   U  |   I  |   O  |   P  |   \    |
  * |--------+------+------+------+------+------|      |           |      |------+------+------+------+------+--------|
  * |  Ctrl  |   A  |   S  |   D  |   F  |   G  |------|           |------|   H  |   J  |   K  |   L  |   ;  | Enter  |
- * |--------+------+------+------+------+------|  Dn  |           | Left |------+------+------+------+------+--------|
+ * |--------+------+------+------+------+------|  Dn  |           |Right |------+------+------+------+------+--------|
  * | LShift |   Z  |   X  |   C  |   V  |   B  |      |           |      |   N  |   M  |   ,  |   .  |   /  |   '    |
  * `--------+------+------+------+------+-------------'           `-------------+------+------+------+------+--------'
  *   | Esc  |CpsCtl| LGui | LAlt | LGui |                                       | RGui |  [   |   ]  | RAlt |   '  |
@@ -55,9 +55,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	KC_SPC,   KC_DEL,  TG(FN1),
 	// Right hand
 	KC_7,     KC_8,    KC_9,    KC_0,     KC_MINS,  KC_EQL,  KC_BSPC,
-	KC_RIGHT, KC_Y,    KC_U,    KC_I,     KC_O,     KC_P,    KC_BSLS,
+	KC_LEFT, KC_Y,    KC_U,    KC_I,     KC_O,     KC_P,    KC_BSLS,
 	KC_H,     KC_J,    KC_K,    KC_L,     KC_SCLN,  KC_ENT,
-	KC_LEFT,  KC_N,    KC_M,    KC_COMM,  KC_DOT,   KC_SLSH, KC_QUOT,
+	KC_RIGHT,  KC_N,    KC_M,    KC_COMM,  KC_DOT,   KC_SLSH, KC_QUOT,
 	KC_RGUI,  KC_LBRC, KC_RBRC, KC_RALT, KC_QUOT,
 	RESET,    KC_NO,
 	KC_NO,
@@ -68,10 +68,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * ,--------------------------------------------------.           ,--------------------------------------------------.
  * |   `    |   1  |   2  |   3  |   4  |   5  |  6   |           |   7  |   8  |   9  |   0  |   -  |   =  | BSpace |
  * |--------+------+------+------+------+------+------|           |------+------+------+------+------+------+--------|
- * | Tab    |   Q  |   W  |   E  |   R  |   T  |  Up  |           |Right |   Y  |   U  |   I  |   O  |   P  |   \    |
+ * | Tab    |   Q  |   W  |   E  |   R  |   T  |  Up  |           | Left |   Y  |   U  |   I  |   O  |   P  |   \    |
  * |--------+------+------+------+------+------|      |           |      |------+------+------+------+------+--------|
  * |  Ctrl  |   A  |   S  |   D  |   F  |   G  |------|           |------|   H  |   J  |   K  |   L  |   ;  | Enter  |
- * |--------+------+------+------+------+------|  Dn  |           | Left |------+------+------+------+------+--------|
+ * |--------+------+------+------+------+------|  Dn  |           |Right |------+------+------+------+------+--------|
  * | LShift |   Z  |   X  |   C  |   V  |   B  |      |           |      |   N  |   M  |   ,  |   .  |   /  |   '    |
  * `--------+------+------+------+------+-------------'           `-------------+------+------+------+------+--------'
  *   | Esc  |CpsCtl| LGui | LGui | RAlt |                                       | PrSc |  [   |   ]  | RAlt |  '   |
@@ -98,9 +98,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	KC_SPC,   KC_DEL,  TG(FN1),
 	// Right hand
 	KC_7,     KC_8,    KC_9,    KC_0,     KC_MINS,  KC_EQL,  KC_BSPC,
-	KC_RIGHT, KC_Y,    KC_U,    KC_I,     KC_O,     KC_P,    KC_BSLS,
+	KC_LEFT, KC_Y,    KC_U,    KC_I,     KC_O,     KC_P,    KC_BSLS,
 	KC_H,     KC_J,    KC_K,    KC_L,     KC_SCLN,  KC_ENT,
-	KC_LEFT,  KC_N,    KC_M,    KC_COMM,  KC_DOT,   KC_SLSH, KC_QUOT,
+	KC_RIGHT,  KC_N,    KC_M,    KC_COMM,  KC_DOT,   KC_SLSH, KC_QUOT,
 	KC_PSCR,  KC_LBRC, KC_RBRC, KC_RALT,  KC_QUOT,
 	RESET,    KC_NO,
 	KC_NO,
